@@ -18,6 +18,8 @@ itchat是一个开源的微信个人号接口，使用python调用微信从未�
 
 ```python
 pip install itchat
+npm install -g qrcode-terminal-alpha
+demo: qrcode-terminal hello
 ```
 
 ## 简单入门实例

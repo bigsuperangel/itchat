@@ -18,6 +18,9 @@ Now Wechat is an important part of personal life, hopefully this repo can help y
 .. code:: bash
 
     pip install itchat
+    npm install -g qrcode-terminal-alpha
+    demo: qrcode-terminal hello
+
 
 **Simple uses**
 
