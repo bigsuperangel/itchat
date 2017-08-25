@@ -84,6 +84,17 @@ def print_qr(fileDir):
     else:
         os.startfile(fileDir)
 
+def print_cmd_qr_2(qrText,white=BLOCK, black='  ', enableCmdQR=True):
+    '''
+    npm install -g qrcode-terminal-alpha
+    demo: qrcode-terminal hello
+    use qrcode-terminal generate the wechat url
+    '''
+    sys.stdout.write(qrText)
+    sys.stdout.write('\n')
+    sys.stdout.flush()
+    subprocess.call(['qrcode-terminal', qrText])
+
 def print_cmd_qr(qrText, white=BLOCK, black='  ', enableCmdQR=True):
     blockCount = int(enableCmdQR)
     if abs(blockCount) == 0:
